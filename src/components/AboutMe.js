@@ -1,18 +1,19 @@
 import React from 'react';
-
+import './Styles/AboutMe.css';
+import { Typography } from '@mui/material';
 const AboutMe = () => {
   return (
-    <section id="about">
-      <h2>About Me</h2>
-      <p>
-        Hi, I'm Andres! I'm a passionate and dedicated fullstack web developer with 2 years of experience in building web applications. I love working with cutting-edge technologies and crafting robust, scalable, and user-friendly solutions.
-      </p>
-      <p>
-        I have a strong background in [mention my skills/technologies] and have worked on various projects, including [mention some notable projects/achievements]. I'm constantly learning and exploring new technologies to stay up-to-date with the latest industry trends.
-      </p>
-      <p>
-        When I'm not coding, you can find me [mention my interests/hobbies]. I believe that a well-rounded individual brings creativity and fresh perspectives to their work.
-      </p>
+    <section className="about-container">
+      <div className="about-container__text">
+      <Typography className='about-container__text__title' fontWeight="bold" variant="h6" textAlign='left' >About Me </Typography>
+        <Typography variant="h3" textAlign='left'>
+          Hi, I'm Andres. I'm a passionate and dedicated fullstack web developer.
+          I'm constantly learning and curiously exploring new technologies. 
+          When I'm not coding, you can find me making music, at the gym, at concerts, building mechanical keyboards, and gaming!
+        </Typography>
+      </div>
+
+      <img src={require('../assets/decoration.png')} style={{ width: '500px' }}  alt="about-decoration" />
     </section>
   );
 };

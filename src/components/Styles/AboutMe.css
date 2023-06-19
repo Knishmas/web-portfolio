@@ -1,0 +1,18 @@
+.about-container{
+    flex-grow: 1;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    align-items: center;
+}
+  .about-container__text {
+    grid-column: 1; 
+  }
+
+  .about-container img {
+    grid-column: 2; 
+    width: 100%; 
+  }
+  .about-container__text__title{
+    padding-bottom: 1.5rem;
+  }
