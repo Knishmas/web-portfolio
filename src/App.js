@@ -1,6 +1,5 @@
 import { AboutMe,Hero, Experiences} from './components';
 import './App.css';
-import { Container } from '@mui/material';
 
 function App() {
   return (
