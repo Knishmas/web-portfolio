@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+  }
+
 .hero-container {
     flex-grow: 1;
     height: 100vh;
@@ -7,7 +11,6 @@
     background-size: cover;
   }
   
-
 .hero-container__text__container{
     text-align: center;
     padding-top: 40vh;
@@ -27,6 +30,14 @@
     top: 2rem;
     left: 2rem;
     text-decoration: none;
+}
+.hero-container__nav-top-left a {
+    text-decoration: none;
+    color: white;
+}
+.hero-container__nav-top-left a:hover {
+    color: #FF5F1F;
+    
 }
 .hero-container__nav-top-right{
     color: white;

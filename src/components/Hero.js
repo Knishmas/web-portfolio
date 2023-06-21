@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <div className='hero-container'>
       <div className='hero-container__nav-top-left'>
-        <p>About me</p>
+        <a href="#about-me-section">About me</a>
       </div>
 
       <div className='hero-container__nav-top-right'>
@@ -19,7 +19,7 @@ const Hero = () => {
       </div>
 
       <div className='hero-container__nav-bottom-right'>
-        <p>Contact me</p>
+        <p>Contact me!</p>
       </div>
 
       <div className='hero-container__text__container'>

@@ -3,7 +3,7 @@ import './Styles/AboutMe.css';
 import { Container, Typography } from '@mui/material';
 const AboutMe = () => {
   return (
-    <section className="about-container">
+    <section id="about-me-section" className="about-container">
       <Container sx={{ display: 'grid', gridTemplateColumns: '3fr 2fr' }} alignItems="center">
       <div className="about-container__text">
       <Typography className='about-container__text__title' fontWeight="bold" variant="h6" textAlign='left' >About Me </Typography>
