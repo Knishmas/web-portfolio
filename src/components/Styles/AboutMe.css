@@ -1,18 +1,18 @@
 .about-container{
-    flex-grow: 1;
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 3fr 2fr;
+    display: flex;
     align-items: center;
+    height: 100vh;
+    /* background-color: #ECF2FF; */
+    background-color: #F5EAEA;
 }
   .about-container__text {
-    grid-column: 1; 
+    font-family: 'Limelight', cursive;
   }
 
   .about-container img {
-    grid-column: 2; 
     width: 100%; 
   }
   .about-container__text__title{
     padding-bottom: 1.5rem;
   }
+
