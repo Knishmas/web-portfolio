@@ -1,4 +1,4 @@
-import { AboutMe,Hero,Skills,Experiences} from './components';
+import { AboutMe,Hero,Skills,Contact,Experiences} from './components';
 import './App.css';
 
 function App() {
@@ -7,6 +7,7 @@ function App() {
         <Hero/>
         <AboutMe/>
         <Skills/>
+        <Contact/>
         <Experiences/>
     </div>
   
