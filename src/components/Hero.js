@@ -7,19 +7,27 @@ const Hero = () => {
   return (
     <div className='hero-container'>
       <div className='hero-container__nav-top-left'>
+      <Typography variant="h6">
         <a href="#about-me-section">About me</a>
+        </Typography> 
       </div>
 
       <div className='hero-container__nav-top-right'>
-        <p>My experience</p>
+      <Typography variant="h6">
+        <a href="#about-me-section">My Experience</a>
+        </Typography> 
       </div>
 
       <div className='hero-container__nav-bottom-left' >
-        <p>Projects</p>
+      <Typography variant="h6">
+        <a href="#about-me-section">Projects</a>
+        </Typography> 
       </div>
 
       <div className='hero-container__nav-bottom-right'>
-        <p>Contact me!</p>
+      <Typography variant="h6">
+        <a href="#about-me-section">Contact Me</a>
+        </Typography> 
       </div>
 
       <div className='hero-container__text__container'>

@@ -35,6 +35,18 @@ html {
     text-decoration: none;
     color: white;
 }
+.hero-container__nav-top-right a {
+    text-decoration: none;
+    color: white;
+}
+.hero-container__nav-bottom-left a {
+    text-decoration: none;
+    color: white;
+}
+.hero-container__nav-bottom-right a {
+    text-decoration: none;
+    color: white;
+}
 .hero-container__nav-top-left a:hover {
     color: #FF5F1F;
     
