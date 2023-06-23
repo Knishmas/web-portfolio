@@ -1,4 +1,4 @@
-import { AboutMe,Hero, Skills,Experiences} from './components';
+import { AboutMe,Hero,Skills,Experiences} from './components';
 import './App.css';
 
 function App() {
