@@ -10,7 +10,7 @@
   }
 
   .about-container img {
-    width: 100%; 
+    /* width: 100%;  */
   }
   .about-container__text__title{
     padding-bottom: 1.5rem;
