@@ -4,3 +4,7 @@
     height: 100vh;
     background-color: #F5EAEA;
 }
+.contact-container__form{
+    display: flex;
+    justify-content: flex-end;
+}
