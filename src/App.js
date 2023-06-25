@@ -7,8 +7,8 @@ function App() {
         <Hero/>
         <AboutMe/>
         <Skills/>
-        <Contact/>
         <Experiences/>
+        <Contact/>
     </div>
   
   );
