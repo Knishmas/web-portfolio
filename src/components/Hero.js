@@ -14,7 +14,7 @@ const Hero = () => {
 
       <div className='hero-container__nav-top-right'>
       <Typography variant="h6">
-        <a href="#about-me-section">My Experience</a>
+        <a href="#experience-section">My Experience</a>
         </Typography> 
       </div>
 
@@ -26,7 +26,7 @@ const Hero = () => {
 
       <div className='hero-container__nav-bottom-right'>
       <Typography variant="h6">
-        <a href="#about-me-section">Contact Me</a>
+        <a href="#contact-section">Contact Me</a>
         </Typography> 
       </div>
 
