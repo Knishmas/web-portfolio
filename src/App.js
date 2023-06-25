@@ -1,4 +1,4 @@
-import { AboutMe,Hero,Skills,Contact,Experiences} from './components';
+import { AboutMe,Hero,Skills,Contact,Experiences, Projects} from './components';
 import './App.css';
 
 function App() {
@@ -8,6 +8,7 @@ function App() {
         <AboutMe/>
         <Skills/>
         <Experiences/>
+        <Projects/>
         <Contact/>
     </div>
   
