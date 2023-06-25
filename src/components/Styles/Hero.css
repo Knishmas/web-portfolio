@@ -51,6 +51,15 @@ html {
     color: #FF5F1F;
     
 }
+.hero-container__nav-top-right a:hover {
+    color: #FF5F1F;
+}
+.hero-container__nav-bottom-left a:hover {
+    color: #FF5F1F;
+}
+.hero-container__nav-bottom-right a:hover {
+    color: #FF5F1F;
+}
 .hero-container__nav-top-right{
     color: white;
     position: absolute;
