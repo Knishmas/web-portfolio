@@ -4,7 +4,7 @@ import './Styles/Contact.css';
 
 const Contact = () => {
   return (
-    <section className="contact-container">
+    <section id='contact-section' className="contact-container">
       <Container sx={{ display: 'grid', gridTemplateColumns: '2fr 3fr'}}>
       <Container className="contact-container__text" sx={{ textAlign: 'left'}}>
         <Typography variant="h5" textAlign='left' style={{ paddingTop: '25px' }}> Contact</Typography>

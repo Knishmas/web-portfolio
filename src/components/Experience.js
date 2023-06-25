@@ -13,7 +13,7 @@ const Experiences = () => {
   };
 
   return (
-    <section className="experience-container">
+    <section id="experience-section" className="experience-container">
       <Container>
         <Typography variant="h2" style={{ marginBottom: '110px' }}>Experience & Education</Typography>
         <Typography variant="h5">EXPERIENCE</Typography>
