@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Styles/Experience.css';
-import { Typography, List, ListItem, ListItemText, Divider, Collapse, Container, IconButton } from '@mui/material';
+import { Typography, List, ListItem, ListItemText, Divider, Collapse, Container, IconButton, ListItemIcon} from '@mui/material';
 import { ExpandMore, ExpandLess } from '@mui/icons-material';
 
 const Experiences = () => {
@@ -20,6 +20,9 @@ const Experiences = () => {
         <Divider/>
         <List>
           <ListItem onClick={() => handleExpand(1)}>
+          <ListItemIcon>
+              <img src="./icons/snapchat.svg" alt="snapchat"  style={{ height: '50px' }} />
+          </ListItemIcon>
             <ListItemText primary="Snap Inc." secondary="Snap Engineering Academy Scholar (06/22 - 08/22)" />
             {expanded[1] ? (
               <IconButton edge="end" aria-label="expand-less">
@@ -45,7 +48,10 @@ const Experiences = () => {
         <Typography variant="h5">EDUCATION</Typography>
         <Divider/>
         <List>
-          <ListItem onClick={() => handleExpand(0)}>
+          <ListItem onClick={() => handleExpand(0)} >
+          <ListItemIcon>
+              <img src="./icons/csun.svg" alt="csun"  style={{ height: '50px' }} />
+          </ListItemIcon>
             <ListItemText primary="California State University, Northridge" secondary="B.S. Computer Science (2021 - 2023)" />
             {expanded[0] ? (
               <IconButton edge="end" aria-label="expand-less">
@@ -67,7 +73,7 @@ const Experiences = () => {
               </ListItem>
             </List>
           </Collapse>
-          <ListItem>
+          <ListItem style={{ paddingLeft: '4.5rem' }}>
             <ListItemText primary="College of the Canyons" secondary="ADT Computer Science (2018 - 2021)" />
           </ListItem>
         </List>
