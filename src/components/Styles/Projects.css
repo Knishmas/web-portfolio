@@ -4,3 +4,16 @@
     height: 100vh;
     background-color: #F5EAEA;
 }
+.project-description {
+    width: 200px; /* Set the desired width for the description */
+    overflow-wrap: break-word;
+  }
+  
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px; /* Adjust the gap between cards as needed */
+    justify-content: center;
+    max-width: 100%;
+  }
+  
