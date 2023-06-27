@@ -8,3 +8,10 @@
     display: flex;
     justify-content: flex-end;
 }
+
+@media (max-width: 600px) {
+    .form-container {
+      order: 2;
+    }
+  }
+  
