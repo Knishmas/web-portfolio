@@ -6,7 +6,7 @@ const Projects = () => {
   const projects = [
     {
       title: 'Snap Companion',
-      description: 'A personalized hub for directing Snapchatters to mental health resources through a personal and customizable companion',
+      description: 'A prototype feature directing Snapchatters to mental health resources through a personal and customizable companion',
       image: './Project-assets/sCompanion.gif',
       githubLink: 'https://github.com/avrodzz/SnapCompanion',
     }, 
