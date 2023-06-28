@@ -31,7 +31,25 @@ const Hero = () => {
       </div>
 
       <div className='hero-container__text__container'>
-        <Typography variant="h1" className='.hero-container__title' color="white">
+      <Typography
+          variant="h1"
+          className="hero-container__title"
+          color="white"
+          sx={{
+            typography: {
+              md: "h2",
+              sm: "h3",
+              xs: "h4",
+            },
+            fontSize: {
+              xs: '2rem', 
+              sm: '3rem',
+              md: '6em', 
+              lg: '6rem',
+              xl: '6rem', 
+            },
+          }}
+        >
           Hello friend, I'm Andres
         </Typography>
         <Typography variant="h3" className='.hero-container__subtext' color="white">
