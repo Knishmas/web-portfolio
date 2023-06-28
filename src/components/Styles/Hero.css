@@ -15,14 +15,6 @@ html {
     text-align: center;
     padding-top: 40vh;
 }
-.hero-container__title{
-    font-size: 3rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-}
-.hero-container__subtext{
-    font-size: 1.5rem;
-}
 
 .hero-container__nav-top-left{
     color: white;
