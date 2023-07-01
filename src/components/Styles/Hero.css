@@ -5,7 +5,12 @@ html {
 .hero-container {
     flex-grow: 1;
     height: 100vh;
-    background-image: url("../../assets/HeroBackground.jpg");
+    background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url("../../assets/test1.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
