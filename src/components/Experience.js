@@ -15,7 +15,7 @@ const Experiences = () => {
   return (
     <section id="experience-section" className="experience-container">
       <Container>
-        <Typography variant="h2" style={{ marginBottom: '110px' }}>Experience & Education</Typography>
+        <Typography variant="h2" style={{ marginBottom: '110px',  color: '#03DAC5' }}>Experience & Education</Typography>
         <Typography variant="h5">EXPERIENCE</Typography>
         <Divider/>
         <List>
@@ -23,7 +23,7 @@ const Experiences = () => {
           <ListItemIcon>
               <img src="./icons/snapchat.svg" alt="snapchat"  style={{ height: '50px' }} />
           </ListItemIcon>
-            <ListItemText primary="Snap Inc." secondary="Snap Engineering Academy Scholar (06/22 - 08/22)" />
+            <ListItemText primary="Snap Inc." secondary="Snap Engineering Academy Scholar (06/22 - 08/22)"   secondaryTypographyProps={{ style: { color: 'white' } }} />
             {expanded[1] ? (
               <IconButton edge="end" aria-label="expand-less">
                 <ExpandLess />
@@ -52,7 +52,7 @@ const Experiences = () => {
           <ListItemIcon>
               <img src="./icons/csun.svg" alt="csun"  style={{ height: '50px' }} />
           </ListItemIcon>
-            <ListItemText primary="California State University, Northridge" secondary="B.S. Computer Science (2021 - 2023)" />
+            <ListItemText primary="California State University, Northridge" secondary="B.S. Computer Science (2021 - 2023)"   secondaryTypographyProps={{ style: { color: 'white' } }}/>
             {expanded[0] ? (
               <IconButton edge="end" aria-label="expand-less">
                 <ExpandLess />
@@ -74,7 +74,7 @@ const Experiences = () => {
             </List>
           </Collapse>
           <ListItem style={{ paddingLeft: '4.5rem' }}>
-            <ListItemText primary="College of the Canyons" secondary="ADT Computer Science (2018 - 2021)" />
+            <ListItemText primary="College of the Canyons" secondary="ADT Computer Science (2018 - 2021)"   secondaryTypographyProps={{ style: { color: 'white' } }} />
           </ListItem>
         </List>
         <Divider />
