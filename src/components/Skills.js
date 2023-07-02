@@ -1,13 +1,12 @@
 import React from 'react';
-import { Typography, Container, Grid, Divider } from '@mui/material';
+import { Typography, Container, Grid} from '@mui/material';
 import './Styles/Skills.css';
 
 const Skills = () => {
   return (
     <section className='skills-container'>
-      <Divider/>
       <Container style={{ width: '100vw', paddingTop: '2rem', paddingBottom: '2rem' }}>
-        <Typography variant="h1" align="center" style={{ paddingBottom: '2rem' }}>My Skills</Typography>
+        <Typography variant="h3" align="center" style={{ paddingBottom: '2rem',  color: '#03DAC5' }}>My Skills</Typography>
         <Grid container spacing={2} justifyContent="center">
           <Grid item xs={6} sm={4} md={3} lg={2}>
             <img className='icon' src="/icons/javascript.svg" alt="javascript logo" />
@@ -41,7 +40,6 @@ const Skills = () => {
           </Grid>
         </Grid>
       </Container>
-      <Divider/>
     </section>
   );
 };
