@@ -25,11 +25,11 @@ const Experiences = () => {
           </ListItemIcon>
             <ListItemText primary="Snap Inc." secondary="Snap Engineering Academy Scholar (06/22 - 08/22)"   secondaryTypographyProps={{ style: { color: 'white' } }} />
             {expanded[1] ? (
-              <IconButton edge="end" aria-label="expand-less">
+              <IconButton edge="end" aria-label="expand-less" style={{ color: 'white' }}>
                 <ExpandLess />
               </IconButton>
             ) : (
-              <IconButton edge="end" aria-label="expand-more">
+              <IconButton edge="end" aria-label="expand-more" style={{ color: 'white' }}>
                 <ExpandMore />
               </IconButton>
             )}
@@ -54,11 +54,11 @@ const Experiences = () => {
           </ListItemIcon>
             <ListItemText primary="California State University, Northridge" secondary="B.S. Computer Science (2021 - 2023)"   secondaryTypographyProps={{ style: { color: 'white' } }}/>
             {expanded[0] ? (
-              <IconButton edge="end" aria-label="expand-less">
+              <IconButton edge="end" aria-label="expand-less" style={{ color: 'white' }}>
                 <ExpandLess />
               </IconButton>
             ) : (
-              <IconButton edge="end" aria-label="expand-more">
+              <IconButton edge="end" aria-label="expand-more" style={{ color: 'white' }}>
                 <ExpandMore />
               </IconButton>
             )}
