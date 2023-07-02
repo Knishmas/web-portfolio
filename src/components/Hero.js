@@ -20,7 +20,7 @@ const Hero = () => {
 
       <div className='hero-container__nav-bottom-left' >
       <Typography variant="h6">
-        <a href="#about-me-section">Projects</a>
+        <a href="#project-section">Projects</a>
         </Typography> 
       </div>
 
@@ -34,7 +34,7 @@ const Hero = () => {
       <Typography
           variant="h1"
           className="hero-container__title"
-          color="white"
+          color="white" 
           sx={{
             typography: {
               md: "h2",
@@ -52,7 +52,7 @@ const Hero = () => {
         >
           Hello friend, I'm Andres
         </Typography>
-        <Typography variant="h3" className='.hero-container__subtext' color="white">
+        <Typography variant="h3" className='.hero-container__subtext' color="#03DAC5">
           A web developer
         </Typography>
       </div>
