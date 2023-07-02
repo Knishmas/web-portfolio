@@ -7,10 +7,10 @@ html {
     height: 100vh;
     background:
     linear-gradient(
-      rgba(0, 0, 0, 0.4),
-      rgba(0, 0, 0, 0.4)
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
     ),
-    url("../../assets/test1.jpg");
+    url("../../assets/Hero.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -45,17 +45,17 @@ html {
     color: white;
 }
 .hero-container__nav-top-left a:hover {
-    color: #FF5F1F;
+    color: #BB86FC;
     
 }
 .hero-container__nav-top-right a:hover {
-    color: #FF5F1F;
+    color: #BB86FC;
 }
 .hero-container__nav-bottom-left a:hover {
-    color: #FF5F1F;
+    color: #BB86FC;
 }
 .hero-container__nav-bottom-right a:hover {
-    color: #FF5F1F;
+    color: #BB86FC;
 }
 .hero-container__nav-top-right{
     color: white;
