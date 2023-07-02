@@ -7,7 +7,33 @@ import { ThemeProvider, createTheme } from '@mui/material';
 
 const theme = createTheme({
   typography: {
-    fontFamily: '"Bebas Neue", sans-serif',
+    fontFamily: '"Karla", sans-serif',
+    h1: {
+      fontFamily: '"Karla", sans-serif',
+    },
+    h2: {
+      fontFamily: '"Karla", sans-serif',
+    },
+    h3: {
+      fontFamily: 'Inconsolata, monospace',
+    },
+    h4: {
+      fontFamily: 'Inconsolata, monospace',
+    },
+    h5: {
+      fontFamily: 'Inconsolata, monospace',
+    },
+    h6: {
+      fontFamily: 'Inconsolata, monospace',
+    },allVariants: {
+      color: 'white',
+    },
+    body1: {
+      fontFamily: 'Inconsolata, monospace',
+    },
+  },
+  palette: {
+    divider: '#ffffff', 
   },
 });
 
