@@ -18,16 +18,16 @@ const Projects = () => {
     },
     {
       title: 'Eye Candy',
-      description: 'Fullstack web app, utilizing machine learning models, that can determine an article of clothing and its colors from a user image input.',
+      description: 'Fullstack web app, utilizing machine learning models, that can determine an article of clothing and its colors from a user input.',
       image: './Project-assets/EyeCandy.png', // Provide the correct path to the image file
       githubLink: 'https://github.com/490-Team-MAAKDE/490-Project',
     }
   ];
 
   return (
-    <section className="projects-container">
+    <section id='project-section' className="projects-container">
       <Container>
-        <Typography variant="h2">My Projects</Typography>
+        <Typography variant="h2"  style={{color: '#03DAC5'}}>My Projects</Typography>
         <Grid container spacing={2}>
           <Grid item xs={12} sm={6} md={4}>
             <Card  className="project-card">
@@ -41,9 +41,9 @@ const Projects = () => {
                 className="project-card-media"
               />
               <CardContent>
-                <Typography variant="h4">{projects[0].title}</Typography>
+                <Typography variant="h4" style={{ color: "black" }}>{projects[0].title} </Typography>
                 <Box display="flex" justifyContent="center">
-                <Typography variant="body1" className="project-description">
+                <Typography variant="body1" className="project-description" style={{ color: "black" }}>
                   {projects[0].description}
                 </Typography>
                 </Box>
@@ -65,9 +65,9 @@ const Projects = () => {
               className="project-card-media"
             />
             <CardContent>
-              <Typography variant="h4">{projects[1].title}</Typography>
+              <Typography variant="h4" style={{ color: "black" }}>{projects[1].title}</Typography>
               <Box display="flex" justifyContent="center">
-              <Typography variant="body1" className="project-description">
+              <Typography variant="body1" className="project-description" style={{ color: "black" }}>
                 {projects[1].description}
               </Typography>
               </Box>
@@ -89,9 +89,9 @@ const Projects = () => {
               className="project-card-media"
             />
             <CardContent>
-              <Typography variant="h4">{projects[2].title}</Typography>
+              <Typography variant="h4" style={{ color: "black" }}>{projects[2].title}</Typography>
               <Box display="flex" justifyContent="center">
-              <Typography variant="body1" className="project-description">
+              <Typography variant="body1"  className="project-description" style={{ color: "black" }}>
                 {projects[2].description}
               </Typography>
               </Box>
