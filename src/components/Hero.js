@@ -52,9 +52,11 @@ const Hero = () => {
         >
           Hello friend, I'm Andres
         </Typography>
-        <Typography variant="h3" className='.hero-container__subtext' color="#03DAC5">
+        <Typography variant="h3" className="hero-container__subtext wave-effect">
           A web developer
         </Typography>
+        <a href="https://github.com/Knishmas" target='blank'> <img className='hero-icon' src="/icons/github.svg" alt="github" /></a>
+       <a href="https://www.linkedin.com/in/andres-macias1/" target='blank'><img className='hero-icon' src="/icons/linkedin.svg" alt="linkedin" /></a> 
       </div>
     </div>
   );

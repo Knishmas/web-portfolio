@@ -2,6 +2,21 @@ html {
     scroll-behavior: smooth;
   }
 
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .hero-container__title {
+    animation: fadeIn 2s ease-in-out;
+  }
+.hero-icon{
+  height: 50px;
+}
 .hero-container {
     flex-grow: 1;
     height: 100vh;
@@ -80,4 +95,19 @@ html {
     text-decoration: none;
 }
 
+@keyframes wave {
+  0% {
+    color: #03DAC5;
+  }
+  50% {
+    color: #BB86FC;
+  }
+  100% {
+    color: #03DAC5;
+  }
+}
+
+.wave-effect {
+  animation: wave 5s infinite;
+}
 
