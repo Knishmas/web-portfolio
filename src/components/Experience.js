@@ -15,11 +15,11 @@ const Experiences = () => {
   return (
     <section id="experience-section" className="experience-container">
       <Container>
-        <Typography variant="h2" style={{ marginBottom: '110px',  color: '#03DAC5' }}>Experience & Education</Typography>
-        <Typography variant="h5">EXPERIENCE</Typography>
-        <Divider/>
+        <Typography variant="h3" style={{ marginBottom: '110px',  color: '#03DAC5' }}>Experience & Education</Typography>
+        <Typography variant="h5"  sx={{ textDecoration: 'underline' }}>EXPERIENCE</Typography>
+        {/* <Divider/> */}
         <List>
-          <ListItem onClick={() => handleExpand(1)}>
+          <ListItem onClick={() => handleExpand(1)} button>
           <ListItemIcon>
               <img src="./icons/snapchat.svg" alt="snapchat"  style={{ height: '50px' }} />
           </ListItemIcon>
@@ -45,10 +45,10 @@ const Experiences = () => {
             </List>
           </Collapse>
         </List>
-        <Typography variant="h5">EDUCATION</Typography>
-        <Divider/>
+        <Typography variant="h5" sx={{ textDecoration: 'underline' }}>EDUCATION</Typography>
+        {/* <Divider/> */}
         <List>
-          <ListItem onClick={() => handleExpand(0)} >
+          <ListItem onClick={() => handleExpand(0)} button >
           <ListItemIcon>
               <img src="./icons/csun.svg" alt="csun"  style={{ height: '50px' }} />
           </ListItemIcon>
@@ -77,7 +77,7 @@ const Experiences = () => {
             <ListItemText primary="College of the Canyons" secondary="ADT Computer Science (2018 - 2021)"   secondaryTypographyProps={{ style: { color: 'white' } }} />
           </ListItem>
         </List>
-        <Divider />
+        {/* <Divider /> */}
       </Container>
     </section>
   );
