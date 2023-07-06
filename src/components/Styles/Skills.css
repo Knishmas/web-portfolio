@@ -4,4 +4,5 @@
 
 .skills-container{
     display: flex;
+    height: 70vh;
 }
