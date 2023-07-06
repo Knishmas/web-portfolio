@@ -16,9 +16,11 @@ const theme = createTheme({
     },
     h3: {
       fontFamily: 'Inconsolata, monospace',
+      lineHeight: 1.4,
     },
     h4: {
       fontFamily: 'Inconsolata, monospace',
+      lineHeight: 1.3,
     },
     h5: {
       fontFamily: 'Inconsolata, monospace',
@@ -30,6 +32,7 @@ const theme = createTheme({
     },
     body1: {
       fontFamily: 'Inconsolata, monospace',
+      lineHeight: 1.4,
     },
   },
   palette: {
