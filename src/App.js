@@ -6,8 +6,8 @@ function App() {
     <div className="App">
         <Hero/>
         <AboutMe/>
-        <Skills/>
         <Experiences/>
+        <Skills/>
         <Projects/>
         <Contact/>
     </div>
