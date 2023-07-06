@@ -7,6 +7,13 @@
     display: flex;
     justify-content: flex-end;
 }
+#contact-section {
+  background:
+    url("../../assets/steps.svg");
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: cover;
+}
 
 @media (max-width: 600px) {
     .form-container {
