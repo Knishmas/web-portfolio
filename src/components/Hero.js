@@ -48,6 +48,7 @@ const Hero = () => {
               lg: '6rem',
               xl: '6rem', 
             },
+            letterSpacing: '-0.01em',
           }}
         >
           Hello friend, I'm Andres
