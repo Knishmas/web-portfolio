@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './Styles/Experience.css';
 import { Typography, List, ListItem, ListItemText, Divider, Collapse, Container, IconButton, ListItemIcon} from '@mui/material';
 import { ExpandMore, ExpandLess } from '@mui/icons-material';
+import Skills from './Skills';
 
 const Experiences = () => {
   const [expanded, setExpanded] = useState(Array(2).fill(false)); 
@@ -14,9 +15,9 @@ const Experiences = () => {
 
   return (
     <section id="experience-section" className="experience-container">
-      <Container>
+      <Container className='experience-content' sx={{ paddingTop: 3, paddingBottom: 3 }} >
         <Typography variant="h3" style={{ marginBottom: '110px',  color: '#03DAC5' }}>Experience & Education</Typography>
-        <Typography variant="h5"  sx={{ textDecoration: 'underline' }}>EXPERIENCE</Typography>
+        <Typography variant="h5"  sx={{ fontWeight: 'bold',  color: '#03DAC5' }}>EXPERIENCE</Typography>
         {/* <Divider/> */}
         <List>
           <ListItem onClick={() => handleExpand(1)} button>
@@ -45,7 +46,7 @@ const Experiences = () => {
             </List>
           </Collapse>
         </List>
-        <Typography variant="h5" sx={{ textDecoration: 'underline' }}>EDUCATION</Typography>
+        <Typography variant="h5" sx={{ fontWeight: 'bold',  color: '#03DAC5' }}>EDUCATION</Typography>
         {/* <Divider/> */}
         <List>
           <ListItem onClick={() => handleExpand(0)} button >
