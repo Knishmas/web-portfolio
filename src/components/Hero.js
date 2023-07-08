@@ -53,7 +53,7 @@ const Hero = () => {
         >
           Hello friend, I'm Andres
         </Typography>
-        <Typography variant="h3" className="hero-container__subtext wave-effect">
+        <Typography variant="h3" className="hero-container__subtext wave-effect"  style={{ paddingBottom: '0.8rem' }}>
           A web developer
         </Typography>
         <a href="https://github.com/Knishmas" target='blank'> <img className='hero-icon' src="/icons/github.svg" alt="github" /></a>
