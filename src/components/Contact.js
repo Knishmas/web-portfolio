@@ -8,7 +8,7 @@ const Contact = () => {
       <Container>
         <Grid container spacing={2}>
           <Grid item xs={12} md={6}>
-            <Typography variant="h5" textAlign='left' style={{ paddingTop: '25px',  color: '#03DAC5' }}> Contact</Typography>
+            <Typography variant="h6" textAlign='left' style={{ paddingTop: '25px',  color: '#03DAC5' }}> Contact</Typography>
             <Typography variant="h3" textAlign='left' style={{ paddingTop: '25px' }}> Let's Chat!</Typography>
             <Typography variant="h5" textAlign='left' style={{ paddingTop: '25px' }}> Feel free to reach out to me if you'd like to get in touch!</Typography>
           </Grid>
@@ -21,6 +21,12 @@ const Contact = () => {
          "& fieldset": {
            borderColor: "white",
          },
+         "&:hover fieldset": {
+           borderColor: "#03DAC5",
+         },
+         "&.Mui-focused fieldset": {
+           borderColor: "#03DAC5",
+         },
        },
      }} />
                 </Grid>
@@ -29,6 +35,12 @@ const Contact = () => {
        "& .MuiOutlinedInput-root": {
          "& fieldset": {
            borderColor: "white",
+         },
+         "&:hover fieldset": {
+           borderColor: "#03DAC5",
+         },
+         "&.Mui-focused fieldset": {
+           borderColor: "#03DAC5",
          },
        },
      }}/>
@@ -39,13 +51,24 @@ const Contact = () => {
          "& fieldset": {
            borderColor: "white",
          },
+         "&:hover fieldset": {
+           borderColor: "#03DAC5",
+         },
+         "&.Mui-focused fieldset": {
+           borderColor: "#03DAC5",
+         },
        },
      }} />
                 </Grid>
                 <Grid item>
-                  <Button type="submit" variant="outlined" fullWidth>
-                    Send Away! ツ
-                  </Button>
+                <Button
+      type="submit"
+      variant="contained"
+      fullWidth
+      style={{ backgroundColor: '#E966A0', color: 'white' }}
+    >
+      Send Away! ツ
+    </Button>
                 </Grid>
               </Grid>
             </form>
