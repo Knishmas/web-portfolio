@@ -4,7 +4,7 @@ import { Typography, List, ListItem, ListItemText, Button, Collapse, Container, 
 import { ExpandMore, ExpandLess } from '@mui/icons-material';
 
 const Experiences = () => {
-  const [expanded, setExpanded] = useState(Array(2).fill(false));
+  const [expanded, setExpanded] = useState([false, true]);
 
   const handleExpand = (index) => {
     const newExpanded = [...expanded];
