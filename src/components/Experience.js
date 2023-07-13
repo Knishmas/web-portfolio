@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import './Styles/Experience.css';
 import { Typography, List, ListItem, ListItemText, Button, Collapse, Container, IconButton, ListItemIcon } from '@mui/material';
 import { ExpandMore, ExpandLess } from '@mui/icons-material';
-import Skills from './Skills';
 
 const Experiences = () => {
   const [expanded, setExpanded] = useState(Array(2).fill(false));
@@ -18,8 +17,8 @@ const Experiences = () => {
       <Container className='experience-content' maxWidth="md" sx={{ paddingTop: 4, paddingBottom: 4}} >
         <Typography variant="h3" style={{ marginBottom: '110px', color: '#03DAC5' }}>Experience & Education</Typography>
         {/* <Typography variant="h5" sx={{ fontWeight: 'bold', color: '#03DAC5' }}>EXPERIENCE</Typography> */}
-        <List sx={{ backgroundColor: '#69499E', borderRadius: '8px', marginTop: '16px', marginBottom: '16px' }}>
-          <ListItem onClick={() => handleExpand(1)} button sx={{ backgroundColor: '#69499E', borderRadius: '8px', marginBottom: '8px' }}>
+        <List sx={{ backgroundColor: expanded[1] ? '#6002E0' : '#4B02B3', borderRadius: '8px', marginTop: '16px', marginBottom: '16px' }}>
+          <ListItem onClick={() => handleExpand(1)} button sx={{ backgroundColor: expanded[1] ? '##6002E0' : '#4B02B3', borderRadius: '8px', marginBottom: '8px' }}>
             <ListItemIcon>
               <img src="./icons/snapchat.svg" alt="snapchat" style={{ height: '50px' }} />
             </ListItemIcon>
@@ -46,8 +45,8 @@ const Experiences = () => {
           </Collapse>
         </List>
         {/* <Typography variant="h5" sx={{ fontWeight: 'bold', color: '#03DAC5' }}>EDUCATION</Typography> */}
-        <List sx={{ backgroundColor: '#69499E', borderRadius: '8px', marginTop: '16px', marginBottom: '16px' }}>
-          <ListItem onClick={() => handleExpand(0)} button sx={{ backgroundColor: '#69499E', borderRadius: '8px', marginBottom: '8px' }}>
+        <List sx={{ backgroundColor: expanded[0] ? '#6002E0' : '#4B02B3', borderRadius: '8px', marginTop: '16px', marginBottom: '16px' }}>
+          <ListItem onClick={() => handleExpand(0)} button sx={{ backgroundColor: expanded[0] ? '#6002E0' : '#4B02B3', borderRadius: '8px', marginBottom: '8px' }}>
             <ListItemIcon>
               <img src="./icons/csun.svg" alt="csun" style={{ height: '50px' }} />
             </ListItemIcon>
@@ -73,8 +72,8 @@ const Experiences = () => {
               </ListItem>
             </List>
           </Collapse>
-          </List>
-          <List sx={{ backgroundColor: '#69499E', borderRadius: '8px', marginTop: '16px', marginBottom: '16px' }}>
+        </List>
+        <List sx={{ backgroundColor: '#4B02B3', borderRadius: '8px', marginTop: '16px', marginBottom: '16px' }}>
           <ListItem style={{ paddingLeft: '4.5rem' }}>
             <ListItemText primary="College of the Canyons" secondary="ADT Computer Science (2018 - 2021)" secondaryTypographyProps={{ style: { color: ' white' } }} />
           </ListItem>
