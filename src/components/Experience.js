@@ -15,7 +15,7 @@ const Experiences = () => {
   return (
     <section id="experience-section" className="experience-container">
       <Container className='experience-content' maxWidth="md" sx={{ paddingTop: 4, paddingBottom: 4}} >
-        <Typography variant="h3" style={{ marginBottom: '110px', color: '#03DAC5' }}>Experience & Education</Typography>
+        <Typography variant="h3" style={{ marginBottom: '2rem', color: '#03DAC5' }}>Experience & Education</Typography>
         {/* <Typography variant="h5" sx={{ fontWeight: 'bold', color: '#03DAC5' }}>EXPERIENCE</Typography> */}
         <List sx={{ backgroundColor: expanded[1] ? '#6002E0' : '#4B02B3', borderRadius: '8px', marginTop: '16px', marginBottom: '16px' }}>
           <ListItem onClick={() => handleExpand(1)} button sx={{ backgroundColor: expanded[1] ? '##6002E0' : '#4B02B3', borderRadius: '8px', marginBottom: '8px' }}>
@@ -35,10 +35,10 @@ const Experiences = () => {
           </ListItem>
           <Collapse in={expanded[1]}>
             <List component="div" disablePadding>
-              <ListItem>
+              <ListItem sx={{paddingLeft: '4.6rem'}}>
                 <ListItemText primary="• Selected as one of the top 10% of 150+ applicants in the Los Angeles Metropolitan area for a 9-week software engineering program with Next Shift Learning and Snap Inc." />
               </ListItem>
-              <ListItem>
+              <ListItem sx={{paddingLeft: '4.6rem'}}> 
                 <ListItemText primary="• Developed a practical prototype feature for Snap that creates a personalized companion for each user to increase engagement." />
               </ListItem>
             </List>
@@ -64,22 +64,22 @@ const Experiences = () => {
           </ListItem>
           <Collapse in={expanded[0]}>
             <List component="div" disablePadding>
-              <ListItem>
+              <ListItem sx={{paddingLeft: '4.6rem'}}>
                 <ListItemText primary="• GPA: 3.4" />
               </ListItem>
-              <ListItem>
+              <ListItem sx={{paddingLeft: '4.6rem'}}>
                 <ListItemText primary="• Scholarships: Stem Advantage" />
               </ListItem>
             </List>
           </Collapse>
         </List>
-        <List sx={{ backgroundColor: '#4B02B3', borderRadius: '8px', marginTop: '16px', marginBottom: '16px' }}>
+        <List sx={{ backgroundColor: '#4B02B3', borderRadius: '8px', marginTop: '16px', marginBottom: '4rem' }}>
           <ListItem style={{ paddingLeft: '4.5rem' }}>
             <ListItemText primary="College of the Canyons" secondary="ADT Computer Science (2018 - 2021)" secondaryTypographyProps={{ style: { color: ' white' } }} />
           </ListItem>
         </List>
-        <Typography variant="h5" sx={{ fontWeight: 'bold', color: 'white', marginBottom: '1rem' }}>RESUME</Typography>
-        <Button variant="contained" color="primary" href="https://drive.google.com/file/d/1wSEUO-KF9K7ondjv09T4fyrjYr0puTLe/view?usp=sharing" style={{ backgroundColor: '#03DAC5', color: 'white' }} target="_blank">
+        <Typography variant="h3" style={{ marginBottom: '2rem', color: '#03DAC5', marginBottom: '1rem' }}>Resume</Typography>
+        <Button variant="contained" color="primary" href="https://drive.google.com/file/d/1wSEUO-KF9K7ondjv09T4fyrjYr0puTLe/view?usp=sharing" style={{ backgroundColor: '#6002E0', color: 'white' }} target="_blank">
           Resume Ready!
         </Button>
       </Container>
