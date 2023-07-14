@@ -22,7 +22,12 @@ const Experiences = () => {
             <ListItemIcon>
               <img src="./icons/snapchat.svg" alt="snapchat" style={{ height: '50px' }} />
             </ListItemIcon>
-            <ListItemText primary="Snap Inc." secondary="Snap Engineering Academy Scholar (06/22 - 08/22)" secondaryTypographyProps={{ style: { color: 'white' } }} />
+            <ListItemText
+  disableTypography
+  primary={<Typography variant="body2" style={{ fontWeight: 'bold' }}>Snap Inc.</Typography>}
+  secondary="Snap Engineering Academy Scholar (06/22 - 08/22)"
+  style={{ color: 'white' }}
+/>
             {expanded[1] ? (
               <IconButton edge="end" aria-label="expand-less" style={{ color: 'white' }}>
                 <ExpandLess />
@@ -50,7 +55,12 @@ const Experiences = () => {
             <ListItemIcon>
               <img src="./icons/csun.svg" alt="csun" style={{ height: '50px' }} />
             </ListItemIcon>
-            <ListItemText primary="California State University, Northridge" secondary="B.S. Computer Science (2021 - 2023)" secondaryTypographyProps={{ style: { color: 'white' } }} />
+            <ListItemText
+  disableTypography
+  primary={<Typography variant="body2" style={{ fontWeight: 'bold' }}>California State University, Northridge</Typography>}
+  secondary="B.S. Computer Science (2021 - 2023)"
+  style={{ color: 'white' }}
+/>
             {expanded[0] ? (
               <IconButton edge="end" aria-label="expand-less" style={{ color: 'white' }}>
                 <ExpandLess />
@@ -78,10 +88,10 @@ const Experiences = () => {
             <ListItemText primary="College of the Canyons" secondary="ADT Computer Science (2018 - 2021)" secondaryTypographyProps={{ style: { color: ' white' } }} />
           </ListItem>
         </List>
-        <Typography variant="h3" style={{ marginBottom: '2rem', color: '#03DAC5', marginBottom: '1rem' }}>Resume</Typography>
+        {/* <Typography variant="h3" style={{ marginBottom: '2rem', color: '#03DAC5', marginBottom: '1rem' }}>Resume</Typography>
         <Button variant="contained" color="primary" href="https://drive.google.com/file/d/1wSEUO-KF9K7ondjv09T4fyrjYr0puTLe/view?usp=sharing" style={{ backgroundColor: '#6002E0', color: 'white' }} target="_blank">
           Resume Ready!
-        </Button>
+        </Button> */}
       </Container>
     </section>
   );
