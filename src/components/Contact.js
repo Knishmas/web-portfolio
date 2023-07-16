@@ -2,6 +2,11 @@ import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { TextField, Button, Typography, Container, Grid } from '@mui/material';
 import './Styles/Contact.css';
+require('dotenv').config()
+
+const SERVICE_ID = process.env.SERVICE_ID;
+const TEMPLATE_ID  = process.env.TEMPLATE_ID;
+const PUBLIC_KEY = process.env.PUBLIC_KEY;
 
 const Contact = () => {
 
