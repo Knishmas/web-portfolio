@@ -11,7 +11,7 @@ const Contact = () => {
             <Typography variant="h6" textAlign='left' style={{ paddingTop: '25px',  color: '#03DAC5' }}> Contact</Typography>
             <Typography variant="h3" textAlign='left' style={{ paddingTop: '25px' }}> Let's Chat!</Typography>
             <Typography variant="h5" textAlign='left' style={{ paddingTop: '25px' }}> Feel free to reach out to me if you'd like to get in touch!</Typography>
-            <Typography variant="body1" textAlign='left' style={{ paddingTop: '25px' }}> AndresEM1524@gmail.com</Typography>
+            <Typography variant="body1" textAlign='left' style={{ paddingTop: '25px', textDecoration: 'none' }}> <a href='mailto:AndresEM1524@gmail.com' className="emailLink">✉️ AndresEM1524@gmail.com</a></Typography>
           </Grid>
           <Grid item xs={12} md={6} className="form-container">
             <form>
