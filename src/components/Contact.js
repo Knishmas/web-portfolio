@@ -11,6 +11,7 @@ const Contact = () => {
             <Typography variant="h6" textAlign='left' style={{ paddingTop: '25px',  color: '#03DAC5' }}> Contact</Typography>
             <Typography variant="h3" textAlign='left' style={{ paddingTop: '25px' }}> Let's Chat!</Typography>
             <Typography variant="h5" textAlign='left' style={{ paddingTop: '25px' }}> Feel free to reach out to me if you'd like to get in touch!</Typography>
+            <Typography variant="body1" textAlign='left' style={{ paddingTop: '25px' }}> AndresEM1524@gmail.com</Typography>
           </Grid>
           <Grid item xs={12} md={6} className="form-container">
             <form>
@@ -65,7 +66,7 @@ const Contact = () => {
       type="submit"
       variant="contained"
       fullWidth
-      style={{ backgroundColor: '#E966A0', color: 'white' }}
+      style={{ backgroundColor: '#6002E0', color: 'white' }}
     >
       Send Away! ツ
     </Button>
