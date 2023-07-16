@@ -2,11 +2,10 @@ import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { TextField, Button, Typography, Container, Grid } from '@mui/material';
 import './Styles/Contact.css';
-require('dotenv').config()
 
-const SERVICE_ID = process.env.SERVICE_ID;
-const TEMPLATE_ID  = process.env.TEMPLATE_ID;
-const PUBLIC_KEY = process.env.PUBLIC_KEY;
+const SERVICE_ID = process.env.REACT_APP_SERVICE_ID;
+const TEMPLATE_ID  = process.env.REACT_APP_TEMPLATE_ID;
+const PUBLIC_KEY = process.env.REACT_APP_PUBLIC_KEY;
 
 const Contact = () => {
 
@@ -15,12 +14,13 @@ const Contact = () => {
     const sendEmail = (e) => {
       e.preventDefault();
   
-      emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
+      emailjs.sendForm(`${SERVICE_ID}` , `${TEMPLATE_ID}`, form.current, `${PUBLIC_KEY}`)
         .then((result) => {
             console.log(result.text);
         }, (error) => {
             console.log(error.text);
         });
+        e.target.reset();
     };
 
   return (
@@ -34,10 +34,10 @@ const Contact = () => {
             <Typography variant="body1" textAlign='left' style={{ paddingTop: '25px', textDecoration: 'none' }}> <a href='mailto:AndresEM1524@gmail.com' className="emailLink">✉️ AndresEM1524@gmail.com</a></Typography>
           </Grid>
           <Grid item xs={12} md={6} className="form-container">
-            <form>
+            <form ref={form} onSubmit={sendEmail}>
               <Grid container direction="column" spacing={2}>
                 <Grid item>
-                  <TextField required label="Full Name" fullWidth  inputProps={{ style: { color: "white" } }}  sx={{
+                  <TextField name='name' required label="Full Name" fullWidth  inputProps={{ style: { color: "white" } }}  sx={{
        "& .MuiOutlinedInput-root": {
          "& fieldset": {
            borderColor: "white",
@@ -52,7 +52,7 @@ const Contact = () => {
      }} />
                 </Grid>
                 <Grid item>
-                  <TextField required label="Email" fullWidth  inputProps={{ style: { color: "white" } }}  sx={{
+                  <TextField required label="Email" name='email' fullWidth  inputProps={{ style: { color: "white" } }}  sx={{
        "& .MuiOutlinedInput-root": {
          "& fieldset": {
            borderColor: "white",
@@ -67,7 +67,7 @@ const Contact = () => {
      }}/>
                 </Grid>
                 <Grid item>
-                  <TextField required label="Message" multiline rows={5} fullWidth  inputProps={{ style: { color: "white" } }}  sx={{
+                  <TextField required label="Message" name='message' multiline rows={5} fullWidth  inputProps={{ style: { color: "white" } }}  sx={{
        "& .MuiOutlinedInput-root": {
          "& fieldset": {
            borderColor: "white",
