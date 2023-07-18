@@ -1,6 +1,7 @@
 import React from 'react';
 import Typography from '@mui/material/Typography';
 import './Styles/Hero.css';
+import { Container } from '@mui/material';
 
 const Hero = () => {
 
@@ -32,19 +33,14 @@ const Hero = () => {
 
       <div className='hero-container__text__container'>
       <Typography
-          variant="h1"
+          variant="h2"
           className="hero-container__title"
           color="white" 
           sx={{
-            typography: {
-              md: "h2",
-              sm: "h3",
-              xs: "h4",
-            },
             fontSize: {
               xs: '2rem', 
               sm: '3rem',
-              md: '6em', 
+              md: '4rem', 
               lg: '6rem',
               xl: '6rem', 
             },
@@ -53,9 +49,25 @@ const Hero = () => {
         >
           Hello friend, I'm Andres
         </Typography>
-        <Typography variant="h3" className="hero-container__subtext wave-effect"  style={{ paddingBottom: '0.8rem' }}>
-          A web developer
+        <Container  sx={{
+        maxWidth: '60%'}}>
+        <Typography
+          variant="h3"
+          className="hero-container__subtext wave-effect"
+          style={{ paddingBottom: '1rem' }}
+          sx={{
+            fontSize: {
+              xs: '1rem', 
+              sm: '1.2rem',
+              md: '1.5rem', 
+              lg: '2rem',
+              xl: '2rem', 
+            },
+          }}
+        >
+           A full-stack web dev with a drive to create innovative & seamless digital experiences
         </Typography>
+        </Container>
         <a href="https://github.com/Knishmas" target='blank'> <img className='hero-icon' src="/icons/github.svg" alt="github" /></a>
        <a href="https://www.linkedin.com/in/andres-macias1/" target='blank'><img className='hero-icon' src="/icons/linkedin.svg" alt="linkedin" /></a> 
       </div>
