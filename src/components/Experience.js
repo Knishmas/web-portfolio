@@ -87,7 +87,13 @@ const Experiences = () => {
         </List>
         <List sx={{ backgroundColor: '#4B02B3', borderRadius: '8px', marginTop: '16px', marginBottom: '4rem' }}>
           <ListItem style={{ paddingLeft: '4.5rem' }}>
-            <ListItemText primary="College of the Canyons" secondary="ADT Computer Science (2018 - 2021)" secondaryTypographyProps={{ style: { color: ' white' } }} />
+          <ListItemText
+  disableTypography
+  primary={<Typography variant="body2" style={{ fontWeight: 'bold' }}>College of the Canyons</Typography>}
+  secondary="ADT Computer Science (2018 - 2021)"
+  style={{ color: 'white' }}
+/>
+      
           </ListItem>
         </List>
         {/* <Typography variant="h3" style={{ marginBottom: '2rem', color: '#03DAC5', marginBottom: '1rem' }}>Resume</Typography>
