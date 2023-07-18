@@ -22,10 +22,10 @@ html {
     height: 100vh;
     background:
     linear-gradient(
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
     ),
-    url("../../assets/Hero.jpg");
+    url("../../assets/back2.avif");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -44,33 +44,37 @@ html {
     text-decoration: none;
 }
 .hero-container__nav-top-left a {
+    font-weight: bold;
     text-decoration: none;
     color: white;
 }
 .hero-container__nav-top-right a {
+    font-weight: bold;
     text-decoration: none;
     color: white;
 }
 .hero-container__nav-bottom-left a {
+    font-weight: bold;
     text-decoration: none;
     color: white;
 }
 .hero-container__nav-bottom-right a {
+    font-weight: bold;
     text-decoration: none;
     color: white;
 }
 .hero-container__nav-top-left a:hover {
-    color: #BB86FC;
+    color: #03DAC5;
     
 }
 .hero-container__nav-top-right a:hover {
-    color: #BB86FC;
+    color: #03DAC5;
 }
 .hero-container__nav-bottom-left a:hover {
-    color: #BB86FC;
+    color: #03DAC5;
 }
 .hero-container__nav-bottom-right a:hover {
-    color: #BB86FC;
+    color: #03DAC5;
 }
 .hero-container__nav-top-right{
     color: white;
@@ -106,7 +110,7 @@ html {
   background-image: linear-gradient(
     -225deg,
     #03DAC5 0%,
-    #BB86FC 50%,
+    #E966A0 50%,
     #BB86FC 100%
   );
   background-size: auto auto;
@@ -117,5 +121,5 @@ html {
   text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: textclip 2s linear infinite;
+  animation: textclip 2.5s linear infinite;
 }

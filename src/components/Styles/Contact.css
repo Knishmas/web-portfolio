@@ -24,7 +24,9 @@
 .emailLink:hover{
   color: #03DAC5;
 }
-
+.icon{
+  height: 6.5rem;
+}
 @media (max-width: 600px) {
     .form-container {
       order: 2;
