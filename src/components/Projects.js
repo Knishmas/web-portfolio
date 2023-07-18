@@ -29,7 +29,7 @@ const Projects = () => {
     <section id='project-section' className="projects-container">
       <Container>
         <Animated>
-        <Typography variant="h3"  style={{color: '#03DAC5', marginBottom: '2rem'}}>My Projects</Typography>
+        <Typography variant="h3"  style={{color: '#03DAC5', marginBottom: '2rem'}}>Projects</Typography>
         <Grid container spacing={2}>
           <Grid item xs={12} sm={6} md={4}>
             <Card  className="project-card" style={{ borderRadius: '8px' }}>
