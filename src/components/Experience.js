@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import './Styles/Experience.css';
-import { Typography, List, ListItem, ListItemText, Button, Collapse, Container, IconButton, ListItemIcon } from '@mui/material';
+import { Typography, List, ListItem, ListItemText, Collapse, Container, IconButton, ListItemIcon } from '@mui/material';
 import { ExpandMore, ExpandLess } from '@mui/icons-material';
+import Animated from './Animated';
 
 const Experiences = () => {
   const [expanded, setExpanded] = useState([false, true]);
@@ -15,6 +16,7 @@ const Experiences = () => {
   return (
     <section id="experience-section" className="experience-container">
       <Container className='experience-content' maxWidth="md" sx={{ paddingTop: 4, paddingBottom: 4}} >
+        <Animated>
         <Typography variant="h3" style={{ marginBottom: '2rem', color: '#03DAC5' }}>Experience & Education</Typography>
         {/* <Typography variant="h5" sx={{ fontWeight: 'bold', color: '#03DAC5' }}>EXPERIENCE</Typography> */}
         <List sx={{ backgroundColor: expanded[1] ? '#6002E0' : '#4B02B3', borderRadius: '8px', marginTop: '16px', marginBottom: '16px' }}>
@@ -92,6 +94,7 @@ const Experiences = () => {
         <Button variant="contained" color="primary" href="https://drive.google.com/file/d/1wSEUO-KF9K7ondjv09T4fyrjYr0puTLe/view?usp=sharing" style={{ backgroundColor: '#6002E0', color: 'white' }} target="_blank">
           Resume Ready!
         </Button> */}
+        </Animated>
       </Container>
     </section>
   );

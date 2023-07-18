@@ -2,6 +2,7 @@ import React, { useRef, useState } from 'react';
 import emailjs from 'emailjs-com';
 import { TextField, Button, Typography, Container, Grid } from '@mui/material';
 import './Styles/Contact.css';
+import Animated from './Animated';
 
 const SERVICE_ID = process.env.REACT_APP_SERVICE_ID;
 const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID;
@@ -28,6 +29,7 @@ const Contact = () => {
   return (
     <section id='contact-section' className="contact-container">
       <Container>
+        <Animated>
         <Grid container spacing={2}>
           <Grid item xs={12} md={6}>
             <Typography variant="h6" textAlign='left' style={{ paddingTop: '25px', color: '#03DAC5' }}> Contact</Typography>
@@ -104,6 +106,7 @@ const Contact = () => {
             )}
           </Grid>
         </Grid>
+        </Animated>
       </Container>
     </section>
   );

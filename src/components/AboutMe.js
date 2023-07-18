@@ -1,11 +1,14 @@
 import React from 'react';
 import { Container, Typography, Grid } from '@mui/material';
 import './Styles/AboutMe.css';
+import Animated from './Animated';
 
 const AboutMe = () => {
   return (
     <section id="about-me-section" className="about-container">
+      
       <Container>
+        <Animated>
         <Grid container spacing={2} alignItems="center">
           <Grid item xs={12} md={6}>
             <div className="about-container__text">
@@ -16,9 +19,12 @@ const AboutMe = () => {
             </div>
           </Grid>
           <Grid item xs={12} md={6}>
+            <Animated> 
             <img src={require('../assets/decoration.png')} className="about-image" alt="about-decoration" />
+            </Animated>
           </Grid>
         </Grid>
+        </Animated>
       </Container>
     </section>
   );
