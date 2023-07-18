@@ -7,31 +7,33 @@ import { ThemeProvider, createTheme } from '@mui/material';
 
 const theme = createTheme({
   typography: {
-    fontFamily: '"Karla", sans-serif',
+    fontFamily: 'Karla, sans-serif',
     h1: {
-      fontFamily: '"Karla", sans-serif',
+      fontFamily: 'Karla, sans-serif',
+      fontWeight: 800,
     },
     h2: {
-      fontFamily: '"Karla", sans-serif',
+      fontFamily: 'Karla, sans-serif',
+      fontWeight: 700,
     },
     h3: {
-      fontFamily: 'Inconsolata, monospace',
-      lineHeight: 1.4,
+      fontFamily: 'Karla, sans-serif',
+      fontWeight: 600,
     },
     h4: {
-      fontFamily: 'Inconsolata, monospace',
+      fontFamily:'Roboto, sans-serif',
       lineHeight: 1.3,
     },
     h5: {
-      fontFamily: 'Inconsolata, monospace',
+      fontFamily:'Roboto, sans-serif',
     },
     h6: {
-      fontFamily: 'Inconsolata, monospace',
+      fontFamily:'Roboto, sans-serif',
     },allVariants: {
       color: 'white',
     },
     body1: {
-      fontFamily: 'Inconsolata, monospace',
+      fontFamily:'Roboto, sans-serif',
       lineHeight: 1.4,
     },
   },
