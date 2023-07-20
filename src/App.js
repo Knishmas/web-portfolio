@@ -10,9 +10,7 @@ function App() {
   const [loadingInProgress, setLoadingInProgress] = useState(true);
 
   useEffect(() => {
-    window.onload = () => {
       setLoadingInProgress(false);
-    };
   }, []);
 
   return (
