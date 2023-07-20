@@ -20,7 +20,7 @@ const Skills = () => {
             <img className='icon' src="/icons/html.svg" alt="html" />
           </Grid>
           <Grid item xs={6} sm={4} md={3} lg={2}>
-            <img className='icon' src="/icons/css3.png" alt="css" />
+            <img className='icon' src="/icons/css3.svg" alt="css" />
           </Grid>
           <Grid item xs={6} sm={4} md={3} lg={2}>
             <img className='icon' src="/icons/react.svg" alt="react" />
