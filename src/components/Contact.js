@@ -36,7 +36,7 @@ const Contact = () => {
             <Typography variant="h3" textAlign='left' style={{ paddingTop: '25px' }}> Let's Chat!</Typography>
             <Typography variant="h5" textAlign='left' style={{ paddingTop: '25px' }}> Feel free to reach out to me if you'd like to get in touch!</Typography>
             <Typography variant="body1" textAlign='left' style={{ paddingTop: '25px', textDecoration: 'none', paddingBottom: '63px' }}> <a href='mailto:AndresEM1524@gmail.com' className="emailLink">✉️ AndresEM1524@gmail.com</a></Typography>
-            <Button variant="contained"  color="primary" href="https://drive.google.com/file/d/1wSEUO-KF9K7ondjv09T4fyrjYr0puTLe/view?usp=sharing" style={{ backgroundColor: '#6002E0', color: 'white', float: 'left' }} target="_blank">
+            <Button variant="contained"  color="primary" href="https://drive.google.com/file/d/1edi1PbmpI57Qt2Tl_kTchxVdCBtpqb_j/view?usp=sharing" style={{ backgroundColor: '#6002E0', color: 'white', float: 'left' }} target="_blank">
               Resume Ready!
             </Button>
           </Grid>
