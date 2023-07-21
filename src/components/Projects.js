@@ -93,7 +93,7 @@ const Projects = () => {
   <Typography variant="body1" className="project-description" style={{ color: 'white', marginBottom: '0.9rem', textAlign: 'left' }}>
     {projects[2].description}
   </Typography>
-  <Button variant="contained" href={projects[0].githubLink} style={{ backgroundColor: '#6002E0',fontWeight: 'bold',  width: '85%' }} target="_blank">
+  <Button variant="contained" href={projects[2].githubLink} style={{ backgroundColor: '#6002E0',fontWeight: 'bold',  width: '85%' }} target="_blank">
     View on GitHub
   </Button>
 </CardContent>
